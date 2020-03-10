@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = {"n id": 1, titile: "aaa" };
+        console.log(data.titile);
+        console.log(data["n id"]);
+
+        // Json->Object 
+        // JSON.parse(data); // parse함수를 사용할때는 json문법을 잘 지켜야한다.
+
+        // Object -> Json
+        var data2 = JSON.stringify(data);
+        console.log(data2);
+    </script>
+
+</body>
+
+</html>

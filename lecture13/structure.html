@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar = [
+            "John",
+            "Shin",
+            "Mary"
+        ];
+
+        // for(var i=0; i<ar.length; i++){
+        //     document.write(ar[i] + "<br>");
+        // }
+        for(var i in ar){
+            document.write(ar[i] + "<br>");
+        }
+        
+        document.write("<br><br><br>");
+        
+        var ob = {
+            id: 1,
+            title: "hello",
+            writeId: "newLec"
+        };
+        
+        for(var i in ob){
+            document.write(ob[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

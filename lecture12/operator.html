@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //자바스크립트의 새로운 연산자
+        var x = 3;
+        var y = 3;
+
+        if(x == y){
+            document.write("x == y <br>");
+        }
+        if(x === y){
+            document.write("x === y <br>");
+        }
+        
+        document.write("<br><br><br>");
+        var z = 3;
+        var n = new Number(3);
+        
+        if(z == n){
+            document.write("z == n <br>");
+        }
+        if(z === n){
+            document.write("z === n <br>");
+        }
+        
+        document.write("<br><br><br>");
+        
+        ////빼기에서는 문자열이 실수가 됨
+        document.write(3.5 - "2"); 
+        document.write("<br>");
+        var w = 3.5 - "2"; 
+        document.write(typeof w);
+        document.write("<br><br><br>");
+        
+        // 덧샘에서는 숫자가 문자열이 됨
+        document.write(3 + "2");
+        document.write("<br>");
+        var h = 3 + "2";
+        document.write(typeof h);
+        document.write("<br><br><br>");
+        
+        // 불린이 됨
+        document.write(3 > "2");
+        
+        </script>
+</body>
+</html>
