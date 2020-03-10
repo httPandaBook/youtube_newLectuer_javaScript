@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nums = new Array(5, 10, 21, "hello", new Array(2,3,4));
+        console.log(nums);
+        
+        // alert(typeof nums[3]); //스트링 출력
+        
+        // alert(nums[4][1]); // 배열안에 배열 3이 출력됨
+        
+        // var n = nums.splice(2); //배열 2번째값([1]) 이후 지워라
+        // var n = nums.splice(2,1); //배열 2번째값([1]) 이후 하나만 지워라
+        var n = nums.splice(2,0,"hoho"); //배열 2번째값([1])에 0개 지우고 "hoho" 객체 추가하라
+
+        console.log(nums);
+        console.log(n);
+        //
+        // nums.splice(1);
+    </script>
+</body>
+</html>
