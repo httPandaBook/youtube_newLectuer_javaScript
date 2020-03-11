@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // window
+        // window.location
+        // window.history
+        // window.document
+            // Method
+                // alert()
+                // confirm()
+                // prompt()
+                // setTimeout()
+                // clearTimeout()
+                // setInterval()
+                // clearInterval()
+            // Properties
+                // status
+                // defaultStatus
+        var x = 3;
+        var y = 0;
+        window.alert(x + y); // window 생략가능
+        var x2 = prompt("please input x : ", 0);
+        var y2 = prompt("please input y : ", 0);
+        x2 = parseInt(x2);
+        y2 = parseInt(y2);
+        
+        var result = x2 + y2;
+        document.write("<br> prompt typeof: " + typeof result);
+        document.write("<br> prompt : " + result);
+        
+        z2 = parseInt("12abc"); //return 12 //자동으로 문자 삭제
+        document.write("<br> z2 : " + z2);
+        
+        var answer = confirm("really delete?");
+        if(answer)
+            document.write("<br> complete delete");
+    </script>
+</body>
+</html>
