@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <script>
+        function printResult() {
+            var x = prompt("please input x : ", 0);
+            var y = prompt("please input y : ", 0);
+            
+            x = parseInt(x);
+            y = parseInt(y);
+
+            btnPrint.value = x + y; // value값 변경
+            btnPrint.type = "text"; // button 속성 -> text 속성으로 바꾸기
+
+            spanClick.innerText = x + y; // text값 변경
+        }
+    </script>
+    <input type="button" value="clickValue" id="btnPrint" onclick="printResult();" />
+    <br>
+    <span id="spanClick" onclick="alert('hello span!')">this is span </span>
+    
+</body>
+
+</html>

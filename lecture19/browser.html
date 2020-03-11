@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function printResult() {
+            var x = prompt("please input x : ", 0);
+            var y = prompt("please input y : ", 0);
+            x = parseInt(x);
+            y = parseInt(y);
+
+            var result = x + y;
+            document.write("<br> prompt typeof: " + typeof result);
+            document.write("<br> prompt : " + result);
+        }
+    </script>
+    <input type="button" value="click" onclick="printResult();" />
+    <span onclick="alert('hello span!')">this is span </span>
+    
+    <input onmouseover="" />
+
+</body>
+
+</html>

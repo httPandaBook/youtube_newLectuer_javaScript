@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = init;
+
+    function init() {
+        var btnPrint = document.getElementById("btn-print");
+        btnPrint.onclick = printResult;
+    }
+
+    function printResult() {
+        var btnPrint = document.getElementById("btn-print");
+        
+        var x = prompt("please input x : ", 0);
+        var y = prompt("please input y : ", 0);
+
+        x = parseInt(x);
+        y = parseInt(y);
+
+        btnPrint.value = x + y; // value값 변경
+    }
+</script>
+
+<body>
+    <input type="button" value="clickValue" id="btn-print" />
+</body>
+
+</html>
